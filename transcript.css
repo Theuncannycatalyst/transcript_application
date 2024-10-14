@@ -1,0 +1,114 @@
+/* transcript.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Light Grey */
+  color: #333; /* Dark Grey */
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #003366; /* Navy Blue */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #003366;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#login-container, #form-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+#progress-bar {
+  width: 100%;
+  background-color: #f3f3f3;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+#progress {
+  width: 0;
+  height: 10px;
+  background-color: #003366;
+  border-radius: 4px;
+}
+
+/* Mobile optimization */
+@media (max-width: 600px) {
+  #login-container, #form-container {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  display: inline-flex; /* Use inline-flex to align items inside the label */
+  align-items: center; /* Vertically center the checkbox with the text */
+}
+
+legend {
+  font-weight: bold;
+  color: #003366; /* Navy Blue */
+  padding: 0 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2); /* Slightly enlarge the checkboxes */
+  cursor: pointer;
+}
+
+fieldset label {
+  /*display: inline-flex; /* Use inline-flex to align items inside the label */
+  /*align-items: center; /* Vertically center the checkbox with the text */
+  margin-right: 20px;
+  font-weight: normal;
+  color: #333; /* Dark Grey */
+}
+
+input[type="checkbox"] {
+  margin-right: 5px; /* Adjust the space between the checkbox and the label */
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+

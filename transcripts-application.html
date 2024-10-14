@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transcript Application</title>
+        <link rel="stylesheet" href="transcript.css">
+    </head>
+    <body>
+        <div id="login-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Log in</button>
+            </form>
+        </div>
+
+        <div id="form-container" style="display:none;">
+            <h2>Apply for transcripts</h2>
+            <div id="progress-bar">
+                <div id="progress"></div>
+            </div>
+            <form id="transcript-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+                <label for="admissionnumber">Admission Number</label>
+                <input type="text" id="admissionnumber" placeholder="Enter your registration number" required>
+                <label for="course">Course Type</label>
+                <select id="course" required>
+                    <option value="">Select your course</option>
+                    <option value="certificate">Certificate</option>
+                    <option value="diploma">Diploma</option>
+                    <option value="degree">Bachelors Degree</option>
+                    <option value="masters">Masters Degree</option>
+                    <option value="postgraduatediploma">Post Graduate Diploma</option>
+                    <option value="contentenhancement">Content Enhancement</option>
+                    <option value="phd">PhD</option>
+                </select>
+                <label for="program">Program</label>
+                <input type="text" id="program" placeholder="Enter the name of your course" required>
+                <fieldset>
+                    <legend>Years required</legend>
+                    <input type="checkbox" name="year1" value="year1">Year 1
+                    <input type="checkbox" name="year2" value="year2">Year 2
+                    <input type="checkbox" name="year3" value="year3">Year 3
+                    <input type="checkbox" name="year4" value="year4">Year 4
+                    <input type="checkbox" name="year5" value="year5">Year 5
+                    <input type="checkbox" name="year6" value="year6">Year 6
+                  </fieldset>
+                <label for="email">Email address</label>
+                <input type="email" id="email" placeholder="Enter your email address" required>
+                <label for="date">Date</label>
+                <input type="date" id="date" required>
+                <label for="additional">Additional comments</label>
+                <input type="text" id="additional" placeholder="Enter any additional concerns or issues">
+                <label for="delivery-method">Delivery Method</label>
+                <select id="delivery-method" required>
+                    <option value="">Select delivery method</option>
+                    <option value="email">Email</option>
+                    <option value="postal">Postal</option>
+                    <option value="physical">Physical</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="error-message" class="error"></div>
+        </div> 
+        <script src="transcript.js"></script>
+    </body>
+</html>
